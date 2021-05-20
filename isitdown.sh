@@ -32,7 +32,10 @@ else
 				w="${#l}"
 			}
 		done
+		# j'ai compris que tput setaf était pour la coloration, mais je ne sais pas l'adapté en fonction du résultat.
 		tput setaf 3
+		# je ne comprend pas comment àjouter des "=" en foction des tab, cela se base sur le nombre de caracteres.
+		# j'aimerai que tout soit centré dans la boite/ le cadre
 		echo -e "\t=${b//?/=}=
 \t|| ${b//?/ } \t||"
 		for l in "${s[@]}"; do
